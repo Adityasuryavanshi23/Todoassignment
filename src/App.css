@@ -1,0 +1,44 @@
+.addnewbtn {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.todotitle {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.tododesc {
+    font-size: 13px;
+    margin-bottom: 0;
+    word-break: break-word;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.nodata {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+.todoitem {
+    padding: 6px;
+    background: white;
+    border-radius: 6px;
+    color: black;
+}
+
+.todolist {
+    overflow: auto;
+    height: 620px;
+}
+
+.todolist::-webkit-scrollbar {
+    display: none;
+}

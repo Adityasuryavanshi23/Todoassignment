@@ -4,7 +4,7 @@ const useTodoActionsHook = () => {
   const [TodoTask, setTodoTask] = useState(
     localStorage.getItem("TodoTask")
       ? JSON.parse(localStorage.getItem("TodoTask"))
-      : []
+      : [],
   );
   const addTodo = (title, description) => {
     let updatedarr = [
@@ -38,13 +38,13 @@ const useTodoActionsHook = () => {
       setTodoTask(
         localStorage.getItem("TodoTask")
           ? JSON.parse(localStorage.getItem("TodoTask"))
-          : []
+          : [],
       );
     } else {
       setTodoTask(
         TodoTask.filter((item) => {
           return item.title.toLowerCase().includes(search.toLowerCase());
-        })
+        }),
       );
     }
   };
